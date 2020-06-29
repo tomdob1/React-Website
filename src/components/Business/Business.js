@@ -17,12 +17,12 @@ class Business extends React.Component {
                         <div className="Business-address">
                             <p>{this.props.business.address}</p>
                             <p>Bordertown</p>
-                            <p>{this.props.business.state+' '+this.props.zipCode}</p>
+                            <p>{this.props.business.state+' '+this.props.business.zipCode}</p>
                         </div>
                     
                     <div className="Business-reviews">
                         <h3>{this.props.business.category}</h3>
-                        <h3 className="rating">{this.props.rating+' stars'}</h3>
+                        <h3 className="rating">{this.props.business.rating+' stars'}</h3>
                         <h3>{this.props.business.reviewCount+' reviews'}</h3>
                     </div>
                     </div>
